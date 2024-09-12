@@ -17,7 +17,7 @@
             padding: 50px;
         }
         h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem; /* サイズを少し小さく調整 */
             margin-bottom: 20px;
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
@@ -40,6 +40,35 @@
             background-color: #ff6347;
             transform: scale(1.05);
         }
+        /* 追加部分 */
+        .activity-section {
+            margin-top: 40px;
+        }
+        .activity-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .activity-section img {
+            width: 300px;
+            height: auto;
+            margin: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00c300;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 1.2rem;
+            margin-top: 30px;
+        }
+        .link-button:hover {
+            background-color: #00e000;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -48,7 +77,21 @@
         <p>モンスターストライク好きが集まるチャットで一緒に攻略しよう！<br>
         運極作りやマルチプレイ、最新イベント情報まで、<br>
         モンスト仲間と楽しく交流できる場所だよ！</p>
+        
+        <!-- オープンチャットリンク -->
+        <a href="https://line.me/ti/g2/xxxxx" class="link-button" target="_blank">オープンチャットに参加</a>
+
+        <div class="activity-section">
+            <h2>どのような活動をしているか</h2>
+            <p>オープンチャットでは、最新イベントの情報共有やマルチプレイでの協力プレイ、運極作成の支援など、モンストに関する様々な活動を行っています。また、その他モンストに関する雑談も楽しめる場所です。</p>
+
+            <!-- 活動写真の例 -->
+            <img src="assets/monst_activity1.jpg" alt="マルチプレイ">
+            <img src="assets/monst_activity2.jpg" alt="イベント情報共有">
+        </div>
+
         <a href="rules.html" class="btn-rules">ルールを見る</a>
     </div>
 </body>
 </html>
+
