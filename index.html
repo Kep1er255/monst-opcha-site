@@ -40,7 +40,6 @@
             background-color: #ff6347;
             transform: scale(1.05);
         }
-        /* 追加部分 */
         .activity-section {
             margin-top: 40px;
         }
@@ -69,6 +68,31 @@
             background-color: #00e000;
             transform: scale(1.05);
         }
+
+        /* スマホ向け調整 */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem; /* タイトルのフォントサイズをさらに小さく */
+            }
+            p {
+                font-size: 1.2rem; /* 段落のフォントサイズを調整 */
+                line-height: 1.4;
+            }
+            .container {
+                padding: 20px; /* コンテナの余白を少なめに調整 */
+            }
+            .btn-rules, .link-button {
+                padding: 10px 15px; /* ボタンのサイズを少し小さく */
+                font-size: 1rem;
+            }
+            .activity-section h2 {
+                font-size: 2rem; /* セクションタイトルのフォントサイズ調整 */
+            }
+            .activity-section img {
+                width: 100%; /* 画像を画面幅にフィットさせる */
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -94,4 +118,3 @@
     </div>
 </body>
 </html>
-
